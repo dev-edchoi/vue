@@ -5,15 +5,19 @@ import { defineComponent } from 'vue';
 //import StaticMessage from './components/StaticMessage.vue';
 //import ReverseMessage from './components/ReverseMessage.vue';
 //import UserWatcherComponent from './components/UserWatcherComponent.vue';
-import ListLayout from './components/ListLayout.vue';
+//import ListLayout from './components/ListLayout.vue';
+//import ProductItemList from './components/ProductItemList.vue';
+import TaskListComponent from './components/TaskListComponent.vue';
 
 export default defineComponent({
  components: {
     //MyFirstComponent,
     //StaticMessage,
     //ReverseMessage,
-    //UserWatcherComponent
-    ListLayout
+    //UserWatcherComponent,
+    //ListLayout,
+    //ProductItemList,
+    TaskListComponent,
 }
 })
 </script>
@@ -23,9 +27,10 @@ export default defineComponent({
   <MyFirstComponent /> -->
   <!--<StaticMessage /> -->
   <!--<ReverseMessage />-->
-  <UserWatcherComponent />
-  <ListLayout />
+  <!--<UserWatcherComponent />-->
+  <!--<ListLayout /> -->  
   <!-- <ProductItemList /> -->
+  <TaskListComponent />
   <!-- <DiningComponent /> -->
   <!-- <CafeComponent /> 
   <section class="wrapper">
