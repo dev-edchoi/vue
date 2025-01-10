@@ -7,7 +7,10 @@ import { defineComponent } from 'vue';
 //import UserWatcherComponent from './components/UserWatcherComponent.vue';
 //import ListLayout from './components/ListLayout.vue';
 //import ProductItemList from './components/ProductItemList.vue';
-import TaskListComponent from './components/TaskListComponent.vue';
+//import TaskListComponent from './components/TaskListComponent.vue';
+//import DiningComponent from './components/DiningComponent.vue';
+// import CafeComponent from './components/CafeComponent.vue';
+import HeadingComponent from './components/HeadingComponent.vue';
 
 export default defineComponent({
  components: {
@@ -17,7 +20,10 @@ export default defineComponent({
     //UserWatcherComponent,
     //ListLayout,
     //ProductItemList,
-    TaskListComponent,
+    //TaskListComponent,
+    //DiningComponent,
+    // CafeComponent,
+    HeadingComponent
 }
 })
 </script>
@@ -30,13 +36,19 @@ export default defineComponent({
   <!--<UserWatcherComponent />-->
   <!--<ListLayout /> -->  
   <!-- <ProductItemList /> -->
-  <TaskListComponent />
-  <!-- <DiningComponent /> -->
-  <!-- <CafeComponent /> 
+  <!--<TaskListComponent />-->
+  <!--<DiningComponent />-->
+  <!--<CafeComponent /> -->
+  
   <section class="wrapper">
-    <HeadingComponent />
+    <HeadingComponent />  
     <span class="heading">This is a span element in App.vue component</span>
-  </section>-->
+  </section>
  </template>
+<style scoped>
+.wrapper :deep(p){
+  color: #000;
+}
+</style>
 
 
