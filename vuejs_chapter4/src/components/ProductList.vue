@@ -1,9 +1,10 @@
 <template>
     <ProductComp :name="product.name" :price="product.price" />
+    <ProductComp v-bind="product" />
 </template>
 
 <script lang="ts">
-import ProductComp from './ProductComp.vue'
+import ProductComp from './ProductComp.vue';
 
 export default {
     name: 'ProductList',

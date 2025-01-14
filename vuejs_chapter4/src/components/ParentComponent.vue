@@ -1,5 +1,5 @@
 <template>
-    <ChildComponent :name="children[0]" />
+    <ChildComponent :name="children[1]" />
     <ChildComponent />
     <!-- <ChildComponent name="Red Sweater" /> -->
 </template>
