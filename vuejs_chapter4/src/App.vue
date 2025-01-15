@@ -4,18 +4,22 @@ import { defineComponent } from 'vue';
 //import ChildComponent from './components/ChildComponent.vue';
 import ParentComponent from './components/ParentComponent.vue';
 // import ProductComp from './components/ProductComp.vue';
-//import ProductList from './components/ProductList.vue';
+import ProductList from './components/ProductList.vue';
 import BadPizzaUsage from './components/BadPizzaUsage.vue';
 import ToDoList from './components/ToDoList.vue';
+import House from './components/House.vue';
+import WithModalComponent from './components/WithModalComponent.vue';
 
 export default defineComponent({
   components:{
     ParentComponent,
     // ChildComponent,
     // ProductComp,
-    //ProductList
+    ProductList,
     BadPizzaUsage,
     ToDoList,
+    House,
+    WithModalComponent,
   }
 })
 </script>
@@ -24,7 +28,12 @@ export default defineComponent({
   <ParentComponent />
   <!--<ChildComponent/>-->
   <!--<ProductComp />-->
-  <!--<ProductList />-->
+  <ProductList />
   <BadPizzaUsage />
   <ToDoList />
+  <section id="sky" />
+  <section class="wrapper">
+    <House />
+  </section>
+  <WithModalComponent />
 </template>

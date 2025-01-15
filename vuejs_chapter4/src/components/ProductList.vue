@@ -11,6 +11,9 @@ export default {
     components:{
         ProductComp
     },
+    provide:{
+        selectedIds: [1],
+    },
     data() {
         return{
             product:{

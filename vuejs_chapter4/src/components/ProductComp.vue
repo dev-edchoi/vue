@@ -11,6 +11,12 @@ export default {
     props: {
         name: String,
         price: Number,
+    },
+    inject:{
+        currentSelectedIds: {
+            from: 'selectedIds',
+            default: [],
+        }
     }
 }
 </script>
