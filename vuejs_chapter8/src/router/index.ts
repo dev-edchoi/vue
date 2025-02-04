@@ -11,6 +11,7 @@ import PizzasView from "@/views/PizzasView.vue";
 import ContactView from "@/views/ContactView.vue";
 import ContactFaqView from "@/views/ContactFaqView.vue";
 import ContactFormView from "@/views/ContactFormView.vue";
+import ErrorView from "@/views/ErrorView.vue";
 
 const routes: RouteRecordRaw[] = [
     {
@@ -66,6 +67,12 @@ const routes: RouteRecordRaw[] = [
             },
         ],
     },
+    {
+        path: "/:pathMatch(.*)*",
+        // name: "error",
+        // component: ErrorView,
+        redirect: { name: "home" }
+    }
     // {
     //   path: "/login",
     //   name: "login",
