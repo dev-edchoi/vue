@@ -55,8 +55,23 @@ watch(search, (value, prevValue) => {
     router.replace({ query: { search: value } });
 });
 
-
-
-
-
 </script>
+
+<style scoped>
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pizzas-view--container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+</style>
